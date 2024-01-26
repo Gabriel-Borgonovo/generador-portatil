@@ -4,10 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <!-- Libreria de eventos con scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body class="d-flex flex-column justify-content-between">
+    <!-- barra de navegación -->
     <nav class="navbar navbar-expand-lg position-fixed">
         <div class="container">
           <a class="navbar-brand" href="#">Logo</a>
@@ -36,13 +40,13 @@
         </div>
       </nav>
 
-      <main class="min-vh-100">
+      <div class="my-5 my-lg-0 mb-lg-10">
 
         <!-- La portada -->
         <section class="d-flex flex-column flex-lg-row justify-content-between align-items-center overflow-hidden">
             
             <article class="grid-1 d-flex justify-content-center align-items-center">
-                <div class="mx-5 my-5 my-lg-0 pt-5 pt-lg-0">
+                <div class="mx-2 mx-sm-5 my-5 my-lg-0 pt-5 pt-lg-0">
                     <h1 class="display-5">Tu independencia energetica <b class="display-4 fw-bold color-b">Comienza Aquí</b></h1>
                     <p class="fs-18 fs-lg-24 fw-regular">Contamos con un producto innovador y único en el mercado</p>
                     <a href="#" class="btn btn-bg fs-5">Conoce más</a>
@@ -55,12 +59,44 @@
             </article>
         </section>
         
+      </div>
+
+      <main class="container">
+        <section class="mt-5 mb-lg-10">
+          <h2 class="color-c fw-normal display-4">Energía Consciente: El Poder del Ahorro Energético</h2>
+          <p class="fs-5 color-p">
+            En nuestra vida diaria, cada acción, desde apagar la alarma hasta iluminar nuestro hogar, implica un consumo significativo de energía. Este uso constante de recursos energéticos no solo afecta nuestra economía, sino que también tiene un impacto directo en nuestro entorno natural. Es esencial reflexionar sobre la importancia del control y ahorro energético para construir un futuro más sostenible.
+          </p>
+          <p class="fs-5 color-p">
+            Cada pequeña elección que hacemos, como ducharnos con agua caliente o utilizar múltiples dispositivos electrónicos, contribuye al gasto energético general. Tomar conciencia de estas acciones cotidianas nos brinda la oportunidad de adoptar prácticas más eficientes, no solo para reducir los costos económicos asociados al consumo eléctrico, sino también para preservar los valiosos recursos naturales.
+          </p>
+          <p class="fs-5 color-p">
+            El ahorro energético no solo es una medida económica, sino un compromiso con la protección de nuestro planeta. Al ajustar nuestros hábitos y adoptar tecnologías más eficientes, podemos marcar la diferencia. Con cada decisión consciente, contribuimos a la preservación de la naturaleza, promoviendo un equilibrio sostenible entre nuestras necesidades actuales y la salud a largo plazo de nuestro entorno. En este camino hacia la sostenibilidad, cada gesto cuenta. ¿Estás listo para reducir tu consumo eléctrico y ser parte de la solución? que titulo le pondrias?
+          </p>
+        </section>
+        <section class="row min-vh-100 gap-3 gap-lg-0" data-aos="fade-up">
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-start justify-content-lg-center align-items-start order-1 order-lg-0">
+            <h2 class="fs-1 fw-bold">Estación de energía móvil G-5</h2>
+            <p class="fs-4 color-p">¡Descubre la revolución en generación de energía con nuestro Generador / Acumulador Eléctrico Solar! Libérate de combustibles contaminantes y ruidos molestos al generar tu propia energía de manera sencilla y eficiente. Nuestros equipos portátiles son ligeros y fáciles de manejar, ofreciéndote la libertad de crear tu propia fuente de energía limpia y segura.</p>
+            <a href="#" class="btn btn-bg fs-5">Conoce más</a>
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-end justify-content-lg-center align-items-start overflow-hidden rounded-2">
+            <img src="./assets/imgs/generadores2.jpg" class="img-fluid rounded-2" alt="">
+          </div>
+        </section>
+        
       </main>
 
       <footer>
         
       </footer>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
